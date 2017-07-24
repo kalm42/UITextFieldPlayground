@@ -13,6 +13,7 @@
 		27293D921F25926700E5BD15 /* TextFieldPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27293D901F25926700E5BD15 /* TextFieldPlayground.xcdatamodeld */; };
 		27293D941F25926700E5BD15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27293D931F25926700E5BD15 /* Assets.xcassets */; };
 		27293D971F25926700E5BD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27293D951F25926700E5BD15 /* LaunchScreen.storyboard */; };
+		27293DA01F25939F00E5BD15 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27293D9F1F25939F00E5BD15 /* FancyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		27293D931F25926700E5BD15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27293D961F25926700E5BD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27293D981F25926700E5BD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27293D9F1F25939F00E5BD15 /* FancyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				27293D891F25926700E5BD15 /* AppDelegate.swift */,
 				27293D8B1F25926700E5BD15 /* ViewController.swift */,
+				27293D9E1F25938100E5BD15 /* View */,
 				27293D8D1F25926700E5BD15 /* Main.storyboard */,
 				27293D931F25926700E5BD15 /* Assets.xcassets */,
 				27293D951F25926700E5BD15 /* LaunchScreen.storyboard */,
@@ -65,6 +68,14 @@
 				27293D901F25926700E5BD15 /* TextFieldPlayground.xcdatamodeld */,
 			);
 			path = TextFieldPlayground;
+			sourceTree = "<group>";
+		};
+		27293D9E1F25938100E5BD15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27293D9F1F25939F00E5BD15 /* FancyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27293D8C1F25926700E5BD15 /* ViewController.swift in Sources */,
+				27293DA01F25939F00E5BD15 /* FancyTextField.swift in Sources */,
 				27293D8A1F25926700E5BD15 /* AppDelegate.swift in Sources */,
 				27293D921F25926700E5BD15 /* TextFieldPlayground.xcdatamodeld in Sources */,
 			);

@@ -8,18 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var emailField: FancyTextField!
+    @IBOutlet weak var passwordField: FancyTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        emailField.delegate = self
+        passwordField.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if emailField.isFirstResponder {
+            //do validation
+            passwordField.becomeFirstResponder()
+        } else {
+            passwordField.resignFirstResponder()
+            login()
+        }
+        return false
     }
-
+    func login() {
+        // fancy login functions go here
+    }
+    
+    @IBAction func didTapLogin(_ sender: Any) {
+        //do validation
+        login()
+    }
+    @IBAction func didTapScreen(_ sender: Any) {
+        if emailField.isFirstResponder {
+            emailField.resignFirstResponder()
+        } else if passwordField.isFirstResponder {
+            passwordField.resignFirstResponder()
+        }
+    }
+    
 
 }
 
